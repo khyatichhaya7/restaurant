@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 70px;
+            overflow-x: hidden;
+        }
+
+        .s1 {
+            height: 65px;
+            width: 100%;
+            background-color: aliceblue;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .navbar1 {
+            padding-top: 10px;
+            gap: 1rem;
+            font-weight: bold;
+        }
+
+        .navbar1 a {
+            color: black;
+            font-weight: bold;
+        }
+
+        /* ambiance */
+        .ambiance {
+            height: 150px;
+            width: 100%;
+            background-color: antiquewhite;
+            position: relative;
+        }
+
+        .head1 {
+            font-size: 70px;
+            text-align: center;
+            padding-top: 40px;
+            text-transform: uppercase;
+            font-weight: lighter;
+        }
+
+        .images {
+            height: 700px;
+            width: 100%;
+            background-color: antiquewhite;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            justify-items: center;
+            position: relative;
+        }
+
+        .head2 {
+            height: 550px;
+            width: 350px;
+            margin: 30px;
+            margin-left: 100px;
+        }
+
+        .head3 {
+            height: 550px;
+            width: 350px;
+            margin: 30px;
+            margin-left: 10px;
+
+        }
+
+        .head4 {
+            height: 550px;
+            width: 350px;
+            margin: 30px;
+            margin-left: 10px;
+        }
+
+        .image1 {
+
+            height: 550px;
+            width: 100%;
+        }
+
+        .heading {
+            text-align: center;
+            color: gray;
+            padding-top: 20px;
+        }
+
+        /* @media(max-width:470px) {
+            .s3 {
+                height: auto;
+                width: 100%;
+                grid-template-columns: 1fr;
+            }
+
+            .d1 {
+                height: auto;
+            }
+
+            .img1 {
+                height: auto;
+                width: auto;
+                padding: 10px;
+            }
+
+            .d2 {
+                height: auto;
+            }
+
+            .hh3 {
+                font-size: 25px;
+                padding-left: 15px;
+                padding-top: 20px;
+            }
+
+
+
+        } */
+    </style>
+</head>
+
+<body>
+
+
+    <!-- navbar -->
+    <section class="s1">
+        <nav class="navbar navbar-expand-lg  ">
+            <div class="container-fluid ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav m-auto navbar1">
+                        <li class="nav-item">
+                            <a class="nav-link active " aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about us.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="features.html">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact .html">Contact </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </div>
+    </section>
+ 
+    <!-- ambiance -->
+    <section class="ambiance">
+        <h1 class="head1">restaurant view</h1>
+    </section>
+    <section class="images">
+        <div class="head2">
+            <div id="carouselExample1_outside" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://zurirestaurant.com/wp-content/uploads/2025/01/outdoor-001.jpeg"
+                            class="d-block w-100 image1" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://zurirestaurant.com/wp-content/uploads/2025/01/outsoor-002.jpeg"
+                            class="d-block w-100 image1" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://zurirestaurant.com/wp-content/uploads/2025/01/outsoor-004.jpeg"
+                            class="d-block w-100 image1" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://zurirestaurant.com/wp-content/uploads/2025/01/outdoor-007.jpeg"
+                            class="d-block w-100 image1" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1_outside"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1_outside"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <h1 class="heading">Outdoor</h1>
+        </div>
+
+
+        <div class="head3">
+            <div id="carouselExample2_inside" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://zurirestaurant.com/wp-content/uploads/2025/01/indoor-002-new.jpeg"
+                            class="d-block w-100 image1" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://zurirestaurant.com/wp-content/uploads/2025/01/indoor-005.jpg"
+                            class="d-block w-100 image1" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://zurirestaurant.com/wp-content/uploads/2025/01/indoor-004.jpg"
+                            class="d-block w-100 image1" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://zurirestaurant.com/wp-content/uploads/2025/01/indoor-003-new.jpeg"
+                            class="d-block w-100 image1" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2_inside"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2_inside"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <h1 class="heading">Indoor</h1>
+
+        </div>
+
+
+
+        <div class="head4">
+            <div id="carouselExample3_bar" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://zurirestaurant.com/wp-content/uploads/2025/01/bar-002-new.jpeg"
+                            class="d-block w-100 image1" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://zurirestaurant.com/wp-content/uploads/2025/01/bar-004-new.jpeg"
+                            class="d-block w-100 image1" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://zurirestaurant.com/wp-content/uploads/2025/01/bar-003-new.jpeg"
+                            class="d-block w-100 image1" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://zurirestaurant.com/wp-content/uploads/2025/01/bar-001-new.jpeg"
+                            class="d-block w-100 image1" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3_bar"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3_bar"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <h1 class="heading">Bar</h1>
+
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

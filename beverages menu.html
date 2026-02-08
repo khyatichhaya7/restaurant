@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .d0 {
+            height: 200px;
+            width: 100%;
+        }
+
+        .hh2 {
+            font-size: 60px;
+            padding-top: 50px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+
+        }
+
+        /* section 2 */
+        .s2 {
+            height: 1300px;
+            width: 100%;
+            background-image: url(https://media.myswitzerland.com/image/fetch/w_1760,h_480,c_limit,f_auto,q_auto,e_sharpen:50/https%3A%2F%2Fwww.myswitzerland.com%2F-%2Fmedia%2Fcelum%20connect%2F2024%2F03%2F22%2F08%2F28%2F37%2Flindenhof-zurich-tourism.jpg);
+
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            display: flex;
+            flex-direction: row;
+            column-gap: 20px;
+            row-gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .d1,
+        .d3,
+        .d5,
+        .d7 {
+            height: 450px;
+            width: 300px;
+            background-color: whitesmoke;
+            margin: 10px;
+            border-radius: 30px;
+        }
+
+        .d1,
+        .d5 {
+            margin-left: 50px;
+        }
+
+        /* img 1 */
+        .img1 {
+            height: 250px;
+            width: 300px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .img1:hover {
+            filter: blur(2px);
+            transform: scale(0.7);
+            border-radius: 20px;
+        }
+
+        .d4,
+        .d6,
+        .d8 {
+            height: 450px;
+            width: 300px;
+            background-color: whitesmoke;
+            margin: 10px;
+            border-radius: 30px;
+        }
+
+        .d2 {
+            height: 450px;
+            width: 300px;
+            background-color: brown;
+            margin: 10px;
+            border-radius: 30px;
+            display: grid;
+            grid-template-rows: 1fr;
+        }
+
+        .d9 {
+            height: 450px;
+            width: 300px;
+            background-color: whitesmoke;
+            border-radius: 30px;
+            rotate: -3deg;
+        }
+
+        /* headings */
+        .hh3 {
+            font-size: 25px;
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+
+        .p1 {
+            font-size: 15px;
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+
+        .p2 {
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+
+        .p3 {
+            padding-left: 25px;
+            font-weight: bold;
+            padding-top: 10px;
+            font-size: 18px;
+        }
+
+        /* cart button  */
+        .cart {
+            height: 30px;
+            width: 150px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-left: 30px;
+        }
+
+        .cart:hover {
+            background-color: black;
+            color: white;
+        }
+                .mng {
+            padding-top: 50px;
+            color: #fff;
+            
+        }
+        .mng1 {
+            padding-top: 50px;
+            color: #fff;
+            padding-left: 20px;
+        }
+        .f1 {
+            height: 300px;
+            background-color: #131a22;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        .mylist {
+            color: white;
+            list-style: none;
+            line-height: 1.5;
+            text-align: left;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <section class="s1">
+    </section> -->
+
+    <!-- section 2 -->
+    <section class="s2">
+        <div class="d0">
+            <h1 class="hh2">Thai Special Dishes</h1>
+        </div>
+        <div class="d1">
+            <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/04/cold-coffee-recipe-1.jpg" alt="1"
+                class="img1">
+            <h1 class="hh3">Cold Coffee</h1>
+            <p class="p1">Lorem ipsum dolor sit.</p>
+            <p class="p2">⭐⭐⭐⭐</p>
+            <p class="p3">$50
+                <button type="submit" class="cart">Add to cart</button>
+            </p>
+        </div>
+        <div class="d2">
+            <div class="d9">
+                <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2013/03/carrot-kanji.jpg" alt="1"
+                    class="img1">
+                <h1 class="hh3">Kanji</h1>
+                <p class="p1">Lorem ipsum dolor sit.</p>
+                <p class="p2">⭐⭐⭐⭐⭐</p>
+                <p class="p3">$260
+                    <button type="submit" class="cart">Add to cart</button>
+                </p>
+            </div>
+        </div>
+        <div class="d3">
+            <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/04/lassi-recipe-1.jpg" alt="1"
+                class="img1">
+            <h1 class="hh3">Lassi</h1>
+            <p class="p1">Lorem ipsum dolor sit.</p>
+            <p class="p2">⭐⭐⭐⭐</p>
+            <p class="p3">$180
+                <button type="submit" class="cart">Add to cart</button>
+            </p>
+        </div>
+        <div class="d4">
+            <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2014/01/orange-squash-recipe15.jpg" alt="1"
+                class="img1">
+            <h1 class="hh3">orange squash </h1>
+            <p class="p1">Lorem ipsum dolor sit.</p>
+            <p class="p2">⭐⭐⭐⭐⭐</p>
+            <p class="p3">$100
+                <button type="submit" class="cart">Add to cart</button>
+            </p>
+        </div>
+        <div class="d5">
+            <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2022/05/aam-panna-1.jpg" alt="1"
+                class="img1">
+            <h1 class="hh3">Aam Panna</h1>
+            <p class="p1">Lorem ipsum dolor sit.</p>
+            <p class="p2">⭐⭐⭐⭐</p>
+            <p class="p3">$150
+                <button type="submit" class="cart">Add to cart</button>
+            </p>
+        </div>
+        <div class="d6">
+            <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2015/04/mango-falooda-recipe.jpg" alt="1"
+                class="img1">
+            <h1 class="hh3">Mango Falooda</h1>
+            <p class="p1">Lorem ipsum dolor sit.</p>
+            <p class="p2">⭐⭐⭐⭐⭐</p>
+            <p class="p3">$200
+                <button type="submit" class="cart">Add to cart</button>
+            </p>
+        </div>
+        <div class="d7">
+            <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2012/03/sol-kadhi-1.jpg" alt="1"
+                class="img1">
+            <h1 class="hh3">Solkadhi</h1>
+            <p class="p1">Lorem ipsum dolor sit.</p>
+            <p class="p2">⭐⭐⭐⭐</p>
+            <p class="p3">$250
+                <button type="submit" class="cart">Add to cart</button>
+            </p>
+        </div>
+        <div class="d8">
+            <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2012/05/kokum-sherbet-easy.jpg" alt="1"
+                class="img1">
+            <h1 class="hh3">kokum-sherbet</h1>
+            <p class="p1">Lorem ipsum dolor sit.</p>
+            <p class="p2">⭐⭐⭐⭐⭐</p>
+            <p class="p3">$300
+                <button type="submit" class="cart">Add to cart</button>
+            </p>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+          <section class="footer">
+        <section class="f1">
+            <div class="o1"></div>
+            <div class="o2">
+                <h3 class="mng1">VISIT</h3>
+                <ul class="mylist">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Menu</li>
+                    <li> Gallery</li>
+                    <li>Features</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="o3">
+                <h3 class="mng">connect with us</h3>
+                <ul class="mylist">
+                    <li>facebook</li>
+                    <li>twitter</li>
+                    <li>instagram</li>
+                </ul>
+            </div>
+            <div class="o4">
+                <h3 class="mng1">Zuri</h3>
+                <ul class="mylist">
+                    <li>FAQs</li>
+                    <li>Location</li>
+                    <li>Sign Up To Our Newsletter</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+            </div>
+            <div class="o5">
+                <h3 class="mng">Address</h3>
+                <ul class="mylist">
+                    <li>The Black Swan</li>
+                    <li>Oldstead</li>
+                    <li>York</li>
+                    <li>North Yorkshire</li>
+                    <li>YO61 4BL</li>
+                    <li>Email: reception@blackswanoldstead.co.uk</li>
+                </ul>
+            </div>
+            <div class="o6"></div>
+        </section>
+    </section>
+</body>
+
+</html>

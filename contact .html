@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 1000px;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        .s1 {
+            height: 50px;
+            width: 100%;
+            background-color: antiquewhite;
+
+            padding: 20px;
+        }
+
+        .d1 {
+            height: 20px;
+            width: 20px;
+            background-color: red;
+            border-radius: 50%;
+            list-style: none;
+
+        }
+
+        .d2 {
+            height: 20px;
+            width: 20px;
+            background-color: orange;
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+            left: 50px;
+        }
+
+        .d3 {
+            height: 20px;
+            width: 20px;
+            background-color: rgb(3, 151, 3);
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+            left: 80px;
+        }
+
+        .s2 {
+            height: 975px;
+            width: 100%;
+            /* background-color: rgb(88, 190, 223); */
+            background-image: url(https://sp.yimg.com/ib/th/id/OIP.E0shXpHSe7yRW2QI592O6AHaF7?pid=Api&w=148&h=148&c=7&dpr=2&rs=1);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .hh1 {
+            color: white;
+            padding: 50px;
+            padding-left: 200px;
+            font-size: 50px;
+            font-weight: 100;
+        }
+
+        .hh2 {
+            color: white;
+            padding-top: 0px;
+            padding-left: 200px;
+            font-style: italic;
+        }
+
+        .hh3 {
+            color: white;
+            padding-left: 200px;
+            position: absolute;
+            margin-top: 100px;
+        }
+
+        .t1 {
+            height: 35px;
+            width: 200px;
+            position: absolute;
+            left: 30%;
+            margin-top: 100px;
+            text-align: inherit;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .t2 {
+            height: 35px;
+            width: 200px;
+            position: absolute;
+            left: 48%;
+            margin-top: 100px;
+            text-align: inherit;
+            text-align: center;
+            border-radius: 10px;
+
+        }
+
+        .hh4 {
+            color: white;
+            padding-left: 200px;
+            position: absolute;
+            margin-top: 175px;
+        }
+
+        .t3 {
+            height: 35px;
+            width: 450px;
+            position: absolute;
+            left: 30%;
+            margin-top: 175px;
+            text-align: inherit;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .hh5 {
+            color: white;
+            padding-left: 200px;
+            position: absolute;
+            margin-top: 250px;
+        }
+
+        .t4 {
+            height: 35px;
+            width: 123px;
+            position: absolute;
+            left: 30%;
+            margin-top: 250px;
+            text-align: inherit;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .t5 {
+            height: 35px;
+            width: 123px;
+            position: absolute;
+            left: 42%;
+            margin-top: 250px;
+            text-align: inherit;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .t6 {
+            height: 35px;
+            width: 111px;
+            position: absolute;
+            left: 54%;
+            margin-top: 250px;
+            text-align: inherit;
+            border-radius: 15px;
+            text-align: center;
+
+        }
+
+        .hh6 {
+            color: white;
+            padding-left: 200px;
+            position: absolute;
+            margin-top: 325px;
+
+        }
+
+        .t7 {
+            height: 100px;
+            width: 450px;
+            position: absolute;
+            left: 30%;
+            margin-top: 325px;
+            text-align: inherit;
+            border-radius: 10px;
+        }
+
+        .hh7 {
+            color: white;
+            padding-left: 200px;
+            position: absolute;
+            margin-top: 500px;
+
+        }
+
+        /* 
+        .t8 {
+            height: 75px;
+            width: 300px;
+            position: absolute;
+            left: 30%;
+            margin-top: 475px;
+            text-align: inherit;
+        } */
+        .captcha {
+            background: white;
+            color: black;
+            padding: 20px;
+            border-radius: 4px;
+            height: 30px;
+            width: 20%;
+            font-size: 13px;
+            position: absolute;
+            left: 30%;
+            margin-top: 475px;
+            text-align: center;
+        }
+
+
+        .submit {
+            height: 40px;
+            width: 200px;
+            border: 2px solid white;
+            background-color: transparent;
+            position: absolute;
+            margin-top: 600px;
+            left: 14%;
+            color: white;
+            border-radius: 10px;
+            font-style: inherit;
+            font-size: 15px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        button:hover {
+            background: white;
+            color: #2193b0;
+        }
+
+        .mng {
+            padding-top: 50px;
+            color: #fff;
+
+        }
+
+        .mng1 {
+            padding-top: 50px;
+            color: #fff;
+            padding-left: 20px;
+        }
+
+        .f1 {
+            height: 300px;
+            background-color: #131a22;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        .mylist {
+            color: white;
+            list-style: none;
+            line-height: 1.5;
+            text-align: left;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="s1">
+        <div class="d1"></div>
+        <div class="d2"></div>
+        <div class="d3"></div>
+    </section>
+    <section class="s2">
+        <form action="#" method="post">
+            <h1 class="hh1">Contact Form</h1>
+            <h2 class="hh2">Please fill in your information and we'll be sending your order in no time</h2>
+            <h2 class="hh3">Your Name</h2>
+            <input type="text" placeholder="Last name" class="t2">
+            <input type="text" placeholder="First name" class="t1">
+            <h2 class="hh4">Your Email</h2>
+            <input type="email" name="email" id="n3" placeholder="e.g.hello@gmail.com" class="t3">
+            <h2 class="hh5">Phone </h2>
+            <input type="number" maxlength="3" placeholder="###" class="t4" required>
+            <input type="number" maxlength="3" placeholder="###" class="t5" required>
+            <input type="number" maxlength="4" placeholder="####" class="t6" required>
+            <h2 class="hh6">Message Subject</h2>
+            <input type="text" name="Message" id="n7" class="t7">
+            <h2 class="hh7">Verification*</h2>
+            <div class="captcha">
+                <input type="checkbox" id="verify">
+                <label for="verify">I'm not a robot</label>
+            </div>
+            <button class="submit">Submit form</button>
+        </form>
+    </section>
+    <section class="footer">
+        <section class="f1">
+            <div class="o1"></div>
+            <div class="o2">
+                <h3 class="mng1">VISIT</h3>
+                <ul class="mylist">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Menu</li>
+                    <li> Gallery</li>
+                    <li>Features</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="o3">
+                <h3 class="mng">connect with us</h3>
+                <ul class="mylist">
+                    <li>facebook</li>
+                    <li>twitter</li>
+                    <li>instagram</li>
+                </ul>
+            </div>
+            <div class="o4">
+                <h3 class="mng1">Zuri</h3>
+                <ul class="mylist">
+                    <li>FAQs</li>
+                    <li>Location</li>
+                    <li>Sign Up To Our Newsletter</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+            </div>
+            <div class="o5">
+                <h3 class="mng">Address</h3>
+                <ul class="mylist">
+                    <li>The Black Swan</li>
+                    <li>Oldstead</li>
+                    <li>York</li>
+                    <li>North Yorkshire</li>
+                    <li>YO61 4BL</li>
+                    <li>Email: reception@blackswanoldstead.co.uk</li>
+                </ul>
+            </div>
+            <div class="o6"></div>
+        </section>
+    </section>
+</body>
+
+</html>

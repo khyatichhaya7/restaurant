@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* section 1 (navbar) */
+        .s1 {
+            height: 75px;
+            width: 100%;
+            background-color: aliceblue;
+            position: fixed;
+
+        }
+
+        .navbar1 {
+            padding-top: 10px;
+            gap: 1rem;
+            font-weight: bold;
+        }
+
+        .navbar1 a {
+            color: black;
+            font-weight: bold;
+        }
+
+        /* section 2 gallery */
+        .b1 {
+            height: 1000px;
+            width: 100%;
+            background-color: black;
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        .bb1 {
+            height: 600px;
+            width: 75%;
+            background-color: aliceblue;
+            border: 2px solid gray;
+            margin-left: 200px;
+            margin-top: 75px;
+            display: flex;
+            flex-direction: row;
+            /* row-gap: 20px;
+            column-gap: 20px; */
+            flex-wrap: wrap;
+        }
+
+        .bb2,
+        .bb3 {
+            height: 300px;
+            width: 350px;
+            background-color: grey;
+        }
+
+        .img1 {
+            height: 300px;
+            width: 350px;
+            transition: transform 0.3s;
+        }
+
+        .img1:hover {
+            transform: scale(1.04);
+            /* filter:grayscale(50%); */
+            filter: opacity(30%);
+        }
+            .mng {
+            padding-top: 50px;
+            color: #fff;
+            
+        }
+        .mng1 {
+            padding-top: 50px;
+            color: #fff;
+            padding-left: 20px;
+        }
+        .f1 {
+            height: 300px;
+            background-color: #131a22;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        .mylist {
+            color: white;
+            list-style: none;
+            line-height: 1.5;
+            text-align: left;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <section class="s1">
+        <nav class="navbar navbar-expand-lg  ">
+            <div class="container-fluid ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav m-auto navbar1">
+                        <li class="nav-item">
+                            <a class="nav-link active " aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about us.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        ]
+        </div>
+    </section>
+    <!-- gallery -->
+    <section class="b1">
+        <div class="bb1">
+            <div class="bb2">
+                <img src="https://themewagon.github.io/Lounge/images/gallery/gallery-04@2x.jpg" alt="0" class="img1">
+            </div>
+            <div class="bb3">
+                <img src="https://themewagon.github.io/Lounge/images/gallery/gallery-06@2x.jpg" alt="1" class="img1">
+            </div>
+            <div class="bb2">
+                <img src="https://themewagon.github.io/Lounge/images/gallery/gallery-05@2x.jpg" alt="2" class="img1">
+            </div>
+            <div class="bb3">
+                <img src="https://themewagon.github.io/Lounge/images/gallery/gallery-01@2x.jpg" alt="" class="img1">
+            </div>
+            <div class="bb2">
+                <img src="https://themewagon.github.io/Lounge/images/gallery/gallery-02@2x.jpg" alt="3" class="img1">
+            </div>
+            <div class="bb3">
+                <img src="https://themewagon.github.io/Lounge/images/gallery/gallery-03@2x.jpg" alt="" class="img1">
+            </div>
+            <div class="bb2">
+                <img src="https://static.wixstatic.com/media/3c7d3f_32333166181c428a88a9b24dc85cfb6e~mv2_d_5418_3612_s_4_2.jpg/v1/fill/w_758,h_485,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/3c7d3f_32333166181c428a88a9b24dc85cfb6e~mv2_d_5418_3612_s_4_2.jpg" alt="3" class="img1">
+            </div>
+            <div class="bb3">
+                <img src="https://temperrestaurant.com/wp-content/uploads/2025/09/Bottomless-brunch.webp" alt="" class="img1">
+            </div>
+            <div class="bb2">
+                <img src="https://temperrestaurant.com/wp-content/uploads/2025/09/4-_11zon.webp" alt="3" class="img1">
+            </div>
+        </div>
+    </section>
+      <section class="footer">
+        <section class="f1">
+            <div class="o1"></div>
+            <div class="o2">
+                <h3 class="mng1">VISIT</h3>
+                <ul class="mylist">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Menu</li>
+                    <li> Gallery</li>
+                    <li>Features</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="o3">
+                <h3 class="mng">connect with us</h3>
+                <ul class="mylist">
+                    <li>facebook</li>
+                    <li>twitter</li>
+                    <li>instagram</li>
+                </ul>
+            </div>
+            <div class="o4">
+                <h3 class="mng1">Zuri</h3>
+                <ul class="mylist">
+                    <li>FAQs</li>
+                    <li>Location</li>
+                    <li>Sign Up To Our Newsletter</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+            </div>
+            <div class="o5">
+                <h3 class="mng">Address</h3>
+                <ul class="mylist">
+                    <li>The Black Swan</li>
+                    <li>Oldstead</li>
+                    <li>York</li>
+                    <li>North Yorkshire</li>
+                    <li>YO61 4BL</li>
+                    <li>Email: reception@blackswanoldstead.co.uk</li>
+                </ul>
+            </div>
+            <div class="o6"></div>
+        </section>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

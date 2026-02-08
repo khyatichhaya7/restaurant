@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        /* section 1 (navbar) */
+        .s1 {
+            height: 75px;
+            width: 100%;
+            background-color: aliceblue;
+            position: fixed;
+
+        }
+
+        .navbar1 {
+            padding-top: 10px;
+            gap: 1rem;
+            font-weight: bold;
+        }
+
+        .navbar1 a {
+            color: black;
+            font-weight: bold;
+        }
+
+
+
+        /* section 2 */
+        .s2 {
+            height: 650px;
+            width: 100%;
+            background-image: url(https://static.wixstatic.com/media/9fbf96_93aa359f46fe4c42b2c08c28fa40f9b5~mv2.jpg/v1/fill/w_1898,h_1133,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/9fbf96_93aa359f46fe4c42b2c08c28fa40f9b5~mv2.jpg);
+            /* background-image: url(https://sr-images.eu-central-1.linodeobjects.com/Roganic-HK/_1200x852_crop_center-center_none_ns/10.png); */
+            /* background-image: url(https://sr-images.eu-central-1.linodeobjects.com/_1200x768_crop_center-center_none_ns/TheBaker_TheBottleman_Bakery_Wine_Bar_Hong_Kong_1-0.jpg);
+             */
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+
+
+        .hh1 {
+
+            padding-top: 150px;
+        }
+
+        .hh1,
+        .hh2 {
+            text-align: center;
+            color: black;
+            padding-left: 50px;
+            font-size: 60px;
+            font-weight: lighter;
+        }
+
+        .hh2 {
+            font-size: 70px;
+            font-weight: bolder;
+        }
+
+        .p1 {
+            color: black;
+            /* padding-left: 50px; */
+            text-align: center;
+            padding-top: 20px;
+            font-size: 15px;
+            word-wrap: 500;
+            line-height: 1.2;
+        }
+
+
+        .ambiance {
+            height: 150px;
+            width: 100%;
+            background-color: antiquewhite;
+            position: relative;
+        }
+
+        .head1 {
+            font-size: 70px;
+            text-align: center;
+            padding-top: 40px;
+            text-transform: uppercase;
+            font-weight: lighter;
+        }
+
+        .images {
+            height: 700px;
+            width: 100%;
+            background-color: antiquewhite;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            justify-items: center;
+            position: relative;
+        }
+
+        .head2 {
+            height: 550px;
+            width: 350px;
+            margin: 30px;
+            margin-left: 100px;
+        }
+
+        .head3 {
+            height: 550px;
+            width: 350px;
+            margin: 30px;
+            margin-left: 10px;
+
+        }
+
+        .head4 {
+            height: 550px;
+            width: 350px;
+            margin: 30px;
+            margin-left: 10px;
+        }
+
+        .image1 {
+
+            height: 550px;
+            width: 100%;
+        }
+
+        .heading {
+            text-align: center;
+            color: gray;
+            padding-top: 20px;
+        }
+
+        .mng {
+            padding-top: 50px;
+            color: #fff;
+            text-align: left;
+        }
+
+        .mng1 {
+            padding-top: 50px;
+            color: #fff;
+            padding-left: 20px;
+        }
+
+        .f1 {
+            height: 300px;
+            background-color: #131a22;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        .mylist {
+            color: white;
+            list-style: none;
+            line-height: 1.5;
+            text-align: left;
+            padding-top: 20px;
+        }
+
+        .indian {
+            height: 1250px;
+            width: 100%;
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: row;
+            /* row-gap: 100px; */
+            column-gap: 70px;
+            flex-wrap: wrap;
+        }
+
+        .indian_h1 {
+            font-size: 45px;
+            font-weight: lighter;
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .indian_d1 {
+            height: 100px;
+            width: 100%;
+        }
+
+        .indian_d2 {
+            height: 400px;
+            width: 300px;
+            margin-left: 200px;
+        }
+
+        .indian_d3 {
+            height: 400px;
+            width: 300px;
+        }
+
+        .indian_d4 {
+            height: 400px;
+            width: 300px;
+        }
+
+        .indian_d5 {
+            height: 400px;
+            width: 300px;
+            margin-left: 400px;
+        }
+
+        .indian_d6 {
+            height: 400px;
+            width: 300px;
+        }
+
+        .indian_img {
+            height: 400px;
+            width: 300px;
+            cursor: pointer;
+        }
+
+        .indian_h2 {
+            font-size: 30px;
+            font-weight: lighter;
+            text-align: center;
+            padding-top: 20px;
+            cursor: pointer;
+        }
+
+        /* section 2 gallery */
+        .b1 {
+            height: 1000px;
+            width: 100%;
+            background-color: black;
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        .bb1 {
+            height: 600px;
+            width: 75%;
+            background-color: aliceblue;
+            border: 2px solid gray;
+            margin-left: 200px;
+            margin-top: 75px;
+            display: flex;
+            flex-direction: row;
+            /* row-gap: 20px;
+            column-gap: 20px; */
+            flex-wrap: wrap;
+        }
+
+        .bb2,
+        .bb3 {
+            height: 300px;
+            width: 350px;
+            background-color: grey;
+        }
+
+        .img1 {
+            height: 300px;
+            width: 350px;
+            transition: transform 0.3s;
+        }
+
+        .img1:hover {
+            transform: scale(1.04);
+            /* filter:grayscale(50%); */
+            filter: opacity(30%);
+        }
+
+        .features_s1 {
+            height: 1250px;
+            width: 100%;
+            background-color: white;
+            background-image: url(https://plus.unsplash.com/premium_photo-1673830185894-9030c9e7eba9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzh8fHJlc3RhdXJhbnR8ZW58MHx8MHx8fDA%3D);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            display: flex;
+            flex-direction: row;
+            row-gap: 20px;
+            column-gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .features_d0 {
+            height: 100px;
+            width: 100%;
+            /* background-color: chartreuse; */
+        }
+
+        .features_h0 {
+            font-size: 50px;
+            text-align: center;
+            color: white;
+            text-transform: uppercase;
+            margin-top: 50px;
+
+        }
+
+        .features_d1 {
+            height: 450px;
+            width: 400px;
+            background-color: antiquewhite;
+            margin: 20px;
+            margin-top: 50px;
+            /* padding-top: 50px; */
+            border-radius: 20px;
+        }
+
+        .features_img1 {
+            height: 200px;
+            width: 300px;
+            padding: 20px;
+        }
+
+        .features_hh1 {
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+
+        .features_p1 {
+            padding: 20px;
+
+        }
+
+        .features_d2 {
+            height: 450px;
+            width: 400px;
+            background-color: brown;
+            margin: 20px;
+            margin-top: 50px;
+            display: grid;
+            grid-template-rows: 1fr;
+            border-radius: 20px;
+        }
+
+        .features_d3 {
+            height: 450px;
+            width: 400px;
+            background-color: antiquewhite;
+            margin: 20px;
+            margin-top: 50px;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+
+        .features_d4 {
+            height: 450px;
+            width: 400px;
+            background-color: antiquewhite;
+            rotate: -5deg;
+            border-radius: 20px;
+        }
+
+        .features_d5 {
+            height: 450px;
+            width: 400px;
+            background-color: antiquewhite;
+            margin: 20px;
+            margin-top: 50px;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+
+        .features_d6 {
+            height: 450px;
+            width: 400px;
+            background-color: antiquewhite;
+            margin: 20px;
+            margin-top: 50px;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+
+        .features_d7 {
+            height: 450px;
+            width: 400px;
+            background-color: antiquewhite;
+            margin: 20px;
+            margin-top: 50px;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <section class="s1">
+        <nav class="navbar navbar-expand-lg  ">
+            <div class="container-fluid ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav m-auto navbar1">
+                        <li class="nav-item">
+                            <a class="nav-link active " aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about us.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="features.html">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact .html ">Contact </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </div>
+    </section>
+    <!-- page 1 -->
+    <section class="s2">
+        <div class="d1">
+            <h1 class="hh1">Welcome to our </h1>
+            <h1 class="hh2">Zuri restaurant</h1>
+            <p class="p1">Fresh flavors, every time, works because <br>
+                it's simple but communicates what we're all about. <br>
+                People don't have time to overthink—simplicity cuts <br>
+                through the noise</p>
+
+    </section>
+
+    <section class="ambiance">
+        <h1 class="head1">restaurant view</h1>
+    </section>
+    <section class="images">
+        <div class="head2">
+            <div id="carouselExample1_outside" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://zurirestaurant.com/wp-content/uploads/2025/01/outdoor-001.jpeg"
+                            class="d-block w-100 image1" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://zurirestaurant.com/wp-content/uploads/2025/01/outsoor-002.jpeg"
+                            class="d-block w-100 image1" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://zurirestaurant.com/wp-content/uploads/2025/01/outsoor-004.jpeg"
+                            class="d-block w-100 image1" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://zurirestaurant.com/wp-content/uploads/2025/01/outdoor-007.jpeg"
+                            class="d-block w-100 image1" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1_outside"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1_outside"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <h1 class="heading">Outdoor</h1>
+        </div>
+
+
+        <div class="head3">
+            <div id="carouselExample2_inside" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://zurirestaurant.com/wp-content/uploads/2025/01/indoor-002-new.jpeg"
+                            class="d-block w-100 image1" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://zurirestaurant.com/wp-content/uploads/2025/01/indoor-005.jpg"
+                            class="d-block w-100 image1" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://zurirestaurant.com/wp-content/uploads/2025/01/indoor-004.jpg"
+                            class="d-block w-100 image1" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://zurirestaurant.com/wp-content/uploads/2025/01/indoor-003-new.jpeg"
+                            class="d-block w-100 image1" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2_inside"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2_inside"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <h1 class="heading">Indoor</h1>
+
+        </div>
+
+
+
+        <div class="head4">
+            <div id="carouselExample3_bar" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://zurirestaurant.com/wp-content/uploads/2025/01/bar-002-new.jpeg"
+                            class="d-block w-100 image1" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://zurirestaurant.com/wp-content/uploads/2025/01/bar-004-new.jpeg"
+                            class="d-block w-100 image1" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://zurirestaurant.com/wp-content/uploads/2025/01/bar-003-new.jpeg"
+                            class="d-block w-100 image1" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://zurirestaurant.com/wp-content/uploads/2025/01/bar-001-new.jpeg"
+                            class="d-block w-100 image1" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3_bar"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3_bar"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <h1 class="heading">Bar</h1>
+
+        </div>
+    </section>
+    <section class="indian">
+        <div class="indian_d1">
+            <h1 class="indian_h1"> Discover our mouthwatering delicacies</h1>
+
+        </div>
+        <a href="indian.html">
+            <div class="indian_d2">
+                <img src="https://zurirestaurant.com/wp-content/uploads/2024/08/Image20240814110818.jpg" alt="1"
+                    class="indian_img">
+                <h1 class="indian_h2">Indian Menu</h1>
+            </div>
+        </a>
+        <div class="indian_d3">
+            <a href="thai.html">
+                <img src="https://zurirestaurant.com/wp-content/uploads/2024/08/Image20240814110822.jpg" alt="2"
+                    class="indian_img">
+                <h1 class="indian_h2">Thai Menu</h1>
+            </a>
+        </div>
+        <div class="indian_d4">
+            <a href="special.html">
+                <img src="https://zurirestaurant.com/wp-content/uploads/2024/08/Image20240814110814.jpg" alt="3"
+                    class="indian_img">
+                <h1 class="indian_h2">Special Menu</h1>
+            </a>
+        </div>
+        <div class="indian_d5">
+            <a href="beverage.html">
+                <img src="https://zurirestaurant.com/wp-content/uploads/2024/08/Image20240814110810.jpg" alt="3"
+                    class="indian_img">
+                <h1 class="indian_h2">Beverages Menu</h1>
+            </a>
+        </div>
+        <div class="indian_d6">
+            <a href="kids.html">
+                <img src="https://zurirestaurant.com/wp-content/uploads/2024/11/Kids-Menu.jpg" alt="3"
+                    class="indian_img">
+                <h1 class="indian_h2">Kids Menu</h1>
+            </a>
+        </div>
+    </section>
+    <!-- gallery -->
+    <section class="b1">
+        <div class="bb1">
+            <div class="bb2">
+                <img src="https://themewagon.github.io/Lounge/images/gallery/gallery-04@2x.jpg" alt="0" class="img1">
+            </div>
+            <div class="bb3">
+                <img src="https://themewagon.github.io/Lounge/images/gallery/gallery-06@2x.jpg" alt="1" class="img1">
+            </div>
+            <div class="bb2">
+                <img src="https://themewagon.github.io/Lounge/images/gallery/gallery-05@2x.jpg" alt="2" class="img1">
+            </div>
+            <div class="bb3">
+                <img src="https://themewagon.github.io/Lounge/images/gallery/gallery-01@2x.jpg" alt="" class="img1">
+            </div>
+            <div class="bb2">
+                <img src="https://themewagon.github.io/Lounge/images/gallery/gallery-02@2x.jpg" alt="3" class="img1">
+            </div>
+            <div class="bb3">
+                <img src="https://themewagon.github.io/Lounge/images/gallery/gallery-03@2x.jpg" alt="" class="img1">
+            </div>
+            <div class="bb2">
+                <img src="https://static.wixstatic.com/media/3c7d3f_32333166181c428a88a9b24dc85cfb6e~mv2_d_5418_3612_s_4_2.jpg/v1/fill/w_758,h_485,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/3c7d3f_32333166181c428a88a9b24dc85cfb6e~mv2_d_5418_3612_s_4_2.jpg"
+                    alt="3" class="img1">
+            </div>
+            <div class="bb3">
+                <img src="https://temperrestaurant.com/wp-content/uploads/2025/09/Bottomless-brunch.webp" alt=""
+                    class="img1">
+            </div>
+            <div class="bb2">
+                <img src="https://temperrestaurant.com/wp-content/uploads/2025/09/4-_11zon.webp" alt="3" class="img1">
+            </div>
+        </div>
+    </section>
+    <section class="features_s1">
+        <div class="features_d0">
+            <h1 class="features_h0">our best chef</h1>
+        </div>
+        <div class="features_d1">
+            <img src="https://cdn.pixabay.com/photo/2019/06/18/10/46/platting-4282016_1280.jpg" alt="1"
+                class="features_img1">
+            <h1 class="features_hh1"> Peter Gordon </h1>
+            <p class="features_p1">Chef Gordon is credited as the “Grand Father” of different combinations in cooking.
+                Peter
+                pulled the limits of national cooking into another step forward. </p>
+        </div>
+        <div class="features_d2">
+            <div class="features_d4">
+                <img src="https://sp.yimg.com/ib/th/id/OIP.qCwIhYHug-oWzsdF-jJIYgHaE8?pid=Api&w=148&h=148&c=7&dpr=2&rs=1"
+                    alt="1" class="features_img1">
+                <h1 class="features_hh1"> Josh Emett and Giulio Sturla</h1>
+                <p class="features_p1">New Zealand cook Josh Emett is valued among the best chef on the earth. Giulio
+                    Sturla is
+                    ranked as a standout amongst the most energizing gourmet experts in New Zealand</p>
+            </div>
+        </div>
+        </div>
+        <div class="features_d3">
+            <img src="https://cdn.pixabay.com/photo/2024/02/27/16/43/ai-generated-8600464_1280.jpg" alt="1"
+                class="features_img1">
+            <h1 class="features_hh1"> Annabel Langbein</h1>
+            <p class="features_p1">One of New Zealand's most commended gourmet experts with numerous cookbooks and
+                honors to her
+                name</p>
+        </div>
+        </div>
+        <div class="features_d5">
+            <img src="https://cdn.pixabay.com/photo/2015/08/16/12/38/man-890885_1280.jpg" alt="1" class="features_img1">
+            <h1 class="features_hh1">Yannick Alléno </h1>
+            <p class="features_p1">Yannick Alléno is a French chef who is the current head chef of the restaurant Alléno
+                Paris au Pavillon Ledoyen in Paris</p>
+        </div>
+        </div>
+        <div class="features_d6">
+            <img src="https://cdn.pixabay.com/photo/2022/12/05/09/54/chef-7636393_1280.jpg" alt="1"
+                class="features_img1">
+            <h1 class="features_hh1"> Enrico Bartolini</h1>
+            <p class="features_p1">The most starred chef in Italy, Enrico Bartolini is known for what he calls
+                contemporary classic Italian cuisine. Bartolini also focuses on the nutritional element of his dishes
+                and their visual appeal.</p>
+        </div>
+        </div>
+        <div class="features_d7">
+            <img src="https://cdn.pixabay.com/photo/2023/10/05/13/38/chef-8295997_1280.jpg" alt="1"
+                class="features_img1">
+            <h1 class="features_hh1">Pierre Gagnaire</h1>
+            <p class="features_p1">Pierre Gagnaire is one of the best chefs in the world. His parents were restaurant
+                owners and before taking over their business, he trained in some of the most prestigious kitchens
+                worldwide such as Lucas Carton in Paris.</p>
+        </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <section class="footer">
+        <section class="f1">
+            <div class="o1"></div>
+            <div class="o2">
+                <h3 class="mng1">VISIT</h3>
+                <ul class="mylist">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Menu</li>
+                    <li> Gallery</li>
+                    <li>Features</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="o3">
+                <h3 class="mng">contact us</h3>
+                <ul class="mylist">
+                    <li>facebook</li>
+                    <li>twitter</li>
+                    <li>instagram</li>
+                </ul>
+            </div>
+            <div class="o4">
+                <h3 class="mng1">Zuri</h3>
+                <ul class="mylist">
+                    <li>FAQs</li>
+                    <li>Location</li>
+                    <li>Sign Up To Our Newsletter</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+            </div>
+            <div class="o5">
+                <h3 class="mng">Address</h3>
+                <ul class="mylist">
+                    <li>Zuri</li>
+                    <li>Oldstead</li>
+                    <li>York</li>
+                    <li>North Yorkshire</li>
+                    <li>YO61 4BL</li>
+                    <li>Email: reception@Zuri.co.uk</li>
+                </ul>
+            </div>
+            <div class="o6"></div>
+        </section>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
